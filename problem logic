@@ -11,3 +11,21 @@
         
         double sum = firstnumber + secondnumber;
         System.out.println("The sum of numbers" + sum);
+
+
+
+
+
+
+
+
+
+
+  public static void main(String[] args) {
+        //Scanner input = new Scanner(System.in);
+        String first = "Sukhamrit";
+        String last = "PalSingh";
+        String fullName;
+        fullName = first + " " + last;
+        
+        System.out.print("My full name is:" + fullName);
