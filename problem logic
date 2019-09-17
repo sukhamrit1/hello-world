@@ -1,0 +1,12 @@
+
+        Scanner input = new Scanner(System.in);
+        
+        
+        System.out.println("The Firstnumber is");
+        int firstnumber;    
+        firstnumber = input.nextInt();
+        System.out.println("The Secondnumber is");
+        int secondnumber = input.nextInt();
+        secondnumber = input.nextInt();
+        double sum = firstnumber + secondnumber;
+        System.out.println("The sum of numbers" + sum);
