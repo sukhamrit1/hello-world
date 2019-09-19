@@ -1,0 +1,39 @@
+create table veggies(
+veggie_id varchar(20),
+veggie_name varchar(20),
+veggie_price money,
+veggie_type varchar(20),
+primary key (veggie_id)
+);
+
+select * from veggies
+
+
+
+create table lots(
+lot_id varchar(20),
+lot_name varchar(20),
+Quantity_of_veggies varchar(20),
+veggie_id varchar(20),
+primary key (lot_id)
+
+
+
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A1', 'Cabbage' , '$3','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A2', 'Mustard' , '$2','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A3', 'Spinach' , '$4','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A4', 'Cucumber' , '$1','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A5', 'Raddish' , '$0.5','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A6', 'Broccoflower' , '$1','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A7', 'Corn' , '$2','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A8', 'Brocolli' , '$1','shoot');
+INSERT INTO  veggies (veggie_id, veggie_name, veggie_price, veggie_type )  
+VALUES ( 'A9', 'Squash' , '$1','shoot');
