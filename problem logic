@@ -52,3 +52,29 @@
         
         int sum = a+b;
         System.out.println("The sum is " + a + " and " + b + " is " + sum);
+        
+        
+        
+        
+        
+        
+        
+        
+            Scanner input = new Scanner(System.in);
+        System.out.println("item_name");
+        String item_name = input.nextLine();
+        System.out.println("original_price");
+        float original_price = input.nextInt();
+        System.out.println("discount_rate");
+        float discount_rate = input.nextInt();
+        
+        float amount_saved = original_price*(discount_rate/100)/100;
+        float sale_price = original_price - amount_saved;
+        
+        double tax = sale_price * 0.065;
+        double Total_price = sale_price + tax;
+        
+        
+        System.out.println(" Total Price of " + item_name + " is " + Total_price);
+        System.out.println("Applied tax on " + item_name + " is " + tax);
+        System.out.println(" The Amount saved in " + item_name + " is " + amount_saved);
