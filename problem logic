@@ -29,3 +29,12 @@
         fullName = first + " " + last;
         
         System.out.print("My full name is:" + fullName);
+        
+        
+    sum of two no.    
+        
+               int a=2;
+        int b=4;
+        
+        int sum = a+b;
+        System.out.println("The sum is :" + sum);
