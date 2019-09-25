@@ -227,3 +227,25 @@ values ('2165', 'Peter', '1233');
 insert into Truck (truck_number ,driver_name, order_number)
 values ('2375', 'Gurveer', '1231');
 
+
+create table orders
+(
+order_id varchar(20),
+item_number varchar(20),
+truck_number varchar(20),
+primary key (order_id)
+);
+
+select * from orders
+
+
+alter table Warehouse
+add item_price money;
+
+
+insert into orders (order_id, item_number, truck_number) 
+values ('1', 'A101', '2365');
+
+select * from orders as o, Warehouse as w, Truck as t
+where o.item_number= w.item_number and o.truck_number = t.truck_number
+
