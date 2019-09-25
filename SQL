@@ -174,4 +174,56 @@ right join veggies on lots.lot_id = veggies.veggie_id
 
 
 
+trucking part.................
+
+
+create table Warehouse
+(
+item_number varchar(20),
+item_description varchar(20),
+shelf_number varchar(20),
+quantity_in_stock int,
+primary key (item_number)
+);
+
+select * from Warehouse
+
+
+
+
+create table Truck
+(
+truck_number int,
+driver_name varchar(20),
+order_number int,
+primary key (truck_number)
+);
+
+select * from Truck
+
+
+
+insert into Warehouse ( item_number, item_description, shelf_number, quantity_in_stock)
+values ('A101', 'Fridge', '9', '100');
+insert into Warehouse ( item_number, item_description, shelf_number, quantity_in_stock)
+values ('A102', 'Dinning table', '5', '50');
+insert into Warehouse ( item_number, item_description, shelf_number, quantity_in_stock)
+values ('A103', 'Microwave', '4', '90');
+insert into Warehouse ( item_number, item_description, shelf_number, quantity_in_stock)
+values ('A104', 'Oven', '7', '70');
+insert into Warehouse ( item_number, item_description, shelf_number, quantity_in_stock)
+values ('A105', 'Stove', '8', '56');
+
+
+
+insert into Truck (truck_number ,driver_name, order_number)
+values ('2365', 'Santosh', '1236');
+insert into Truck (truck_number ,driver_name, order_number)
+values ('2465', 'Mantosh', '1235');
+insert into Truck (truck_number ,driver_name, order_number)
+values ('2965', 'Gill', '1234');
+insert into Truck (truck_number ,driver_name, order_number)
+values ('2165', 'Peter', '1233');
+insert into Truck (truck_number ,driver_name, order_number)
+values ('2375', 'Gurveer', '1231');
 
