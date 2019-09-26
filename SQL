@@ -249,3 +249,20 @@ values ('1', 'A101', '2365');
 select * from orders as o, Warehouse as w, Truck as t
 where o.item_number= w.item_number and o.truck_number = t.truck_number
 
+
+select * from lots as l, veggies as v
+where l.veggie_id=v.veggie_id
+order by l.veggie_id;
+
+delete from veggies
+ 
+where veggie_name='Peas'; 
+SELECT veggies.veggie_id, veggies.veggie_name, lots.lot_id, lots.lot_id
+ FROM veggies
+left JOIN lots	on
+ veggies.veggie_id = lots.veggie_id;
+
+ select * from lots order by lots.veggie_id;
+
+ go
+
