@@ -40,3 +40,25 @@ elif user_number2 > user_number3:
 else:
      user_number3 > user_number1
      print user_number3
+     
+     
+     
+     
+     
+     
+     class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def setradius(self,newradius):
+        self.radius = newradius
+    def getarea(self):
+        return  3.14 * self.radius ** 2
+
+    def getperimeter(self):
+        return 2 * 3.14*self.radius
+
+
+firstCircle = Circle(5)
+print("The area of Circle is " + str(firstCircle.getarea()))
+print("The perimetr of Circle is " + str(firstCircle.getperimeter()))
