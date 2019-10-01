@@ -78,3 +78,53 @@
         System.out.println(" Total Price of " + item_name + " is " + Total_price);
         System.out.println("Applied tax on " + item_name + " is " + tax);
         System.out.println(" The Amount saved in " + item_name + " is " + amount_saved);
+        
+        
+        weeek5
+        
+        
+        /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package JavaApplication2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author 758406
+ */
+public class JavaApplication2 {
+    public static double average(int x, int y){
+        double avg = (x+y)/2.0;
+        return avg;
+    
+    }
+    public static void showMessage(){
+        System.out.println("Hello! Welcome to Lambton");
+        
+        
+    }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        showMessage();
+        System.out.println("please enter two values");
+        int x = input.nextInt();
+        int y = input.nextInt();
+        double avg = average(x,y); 
+        System.out.println("the average is " + avg);
+        
+        
+        System.out.println("please enter two values");
+        int a = input.nextInt();
+        int b = input.nextInt();
+        double avg2 = average(a,b); 
+        System.out.println("the average is " + avg2);
+    }
+    
+}
