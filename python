@@ -82,5 +82,11 @@ print(mergelist)
 
 multList = myList * 2
 print(multList)
-selectedlist = multList[1:11:3]
-print(selectedlist)
+selectedlist1 = multList[1:11:3]
+print(selectedlist1)
+
+selectedlist2 = multList[5:7]
+print(selectedlist2)
+
+Amrit = 18 in multList
+print (Amrit)
