@@ -62,3 +62,25 @@ else:
 firstCircle = Circle(5)
 print("The area of Circle is " + str(firstCircle.getarea()))
 print("The perimetr of Circle is " + str(firstCircle.getperimeter()))
+
+
+
+
+
+
+myList = [1, 9, 5, 6, 14]
+
+print(myList)
+
+otherList = ['apple', 'orange', 'lemon']
+
+mergelist = myList + otherList
+
+print(otherList)
+
+print(mergelist)
+
+multList = myList * 2
+print(multList)
+selectedlist = multList[1:11:3]
+print(selectedlist)
