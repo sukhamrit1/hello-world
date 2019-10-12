@@ -1,0 +1,58 @@
+MAIN TEXT
+
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Database Project- Blood Management System}
+\author{Sukhamrit Pal Singh }
+\date{October 2019}
+\begin{document}
+\maketitle
+\input{Introduction.tex}
+\input{Requirements.tex}
+
+\end{document}
+
+
+
+INTRODUCTION
+
+\section{Introduction}
+\item 1.Vishali Chhabra(c0760041)
+\item 2.Sharanpreet Kaur(c0758580)
+\item 3.Sukhamrit Pal Singh(c0761584)
+\item 4.Sukhpreet Singh(c0758567)
+\item 5.Vishavjit Singh(c0759921)
+
+
+
+REQUIREMENTS
+
+
+\section{Requirement 1}
+These are requirements for blood donation system:
+\item 1.The system SHALL provide Hospital coordinator to report all blood groups in hospital.
+\subsection{Use case for requirement1}
+
+\item(a) Goal:  Blood groups record
+\item(b) Primary Actor: Hospital coordinator
+\item(c) Secondary Actor: Donor
+\item(d) Success Scenario: 1.The hospital coordinator will manage the blood stock starting from the blood collection to blood processing, storage and group it into different kinds of blood groups.Each process can be traced from the database.
+
+\section{Requirement 2}
+These are requirements for blood donation system:
+\item 2.The system SHALL notify webform to input the donor's and patient's health information.
+\subsection{Use case for requirement2}
+\item Goal: Treatment information
+\item Primary Actor:  Donor and Hospital Coordinator 
+\item Secondary Actor :Patient
+\item Success Scenario: The patient will come to hospital coordinator and the hospital coordinator will refer the donor whose blood group is related to patient.
+\section{Requirement3}
+\item 3.Donor and patient SHALL have unique id.
+\section{Requirement4}
+\item 4.The system SHALL provide donor administrator to report that donor and patient have same blood groups.
+\section{Requirement5}
+\item 5.The system should maintain hard copy of patients records in case electricity gone out.
+
+
