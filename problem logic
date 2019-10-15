@@ -138,7 +138,7 @@ public class JavaApplication2 {
 week6
 
 
-Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         // Declare x as intrger
         // Declare y as intrger
     //display "please enter a firstnumber"
@@ -152,8 +152,13 @@ Scanner input = new Scanner(System.in);
          int secondnumber;
          secondnumber=input.nextInt();
          
-         if(firstnumber>secondnumber)
+         if(firstnumber>secondnumber){
              System.out.println(firstnumber + " is greater than "+secondnumber);
+         if(firstnumber>0)
+             System.out.println(firstnumber + " is greater than "+secondnumber + " and positive");
+         else
+             System.out.println(firstnumber + " is greater than "+secondnumber + " and negative");
+         }    
          else
              System.out.println(secondnumber + " is greater than "+firstnumber);
              
