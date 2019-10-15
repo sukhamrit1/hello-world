@@ -128,3 +128,32 @@ public class JavaApplication2 {
     }
     
 }
+
+
+
+
+
+
+
+week6
+
+
+Scanner input = new Scanner(System.in);
+        // Declare x as intrger
+        // Declare y as intrger
+    //display "please enter a firstnumber"
+         System.out.println("please enter a firstnumber");
+         int firstnumber;
+         firstnumber=input.nextInt();
+         //display "please enter a secondnumber"
+         
+         
+         System.out.println("please enter a secondnumber");
+         int secondnumber;
+         secondnumber=input.nextInt();
+         
+         if(firstnumber>secondnumber)
+             System.out.println(firstnumber + " is greater than "+secondnumber);
+         else
+             System.out.println(secondnumber + " is greater than "+firstnumber);
+             
