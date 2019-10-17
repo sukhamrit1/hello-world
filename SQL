@@ -415,3 +415,35 @@ BEGIN
 
 END
 exec GeneratePackingSheet
+
+
+
+
+
+
+
+
+
+
+
+
+insert into bloodsample(bloodbank_id, patient_id, donor_id, )
+values('C121','P001','D1');
+insert into bloodsample(bloodbank_id, patient_id, donor_id, )
+values('C122','P002','D2');
+insert into bloodsample(bloodbank_id, patient_id, donor_id, )
+values('C123','P003','D3');
+insert into bloodsample('bloodbank_id', 'patient_id', 'donor_id', )
+values('C124','P004','D4');
+insert into bloodsample('bloodbank_id', 'patient_id', 'donor_id', )
+values('C125','P005','D5');
+insert into bloodsample('bloodbank_id', 'patient_id', 'donor_id', )
+values('C126','P006','D6');
+insert into bloodsample('bloodbank_id', 'patient_id', 'donor_id', )
+values('C127','P007','D7');
+insert into bloodsample('bloodbank_id', 'patient_id', 'donor_id', )
+values('C128','P008','D8');
+insert into bloodsample('bloodbank_id', 'patient_id', 'donor_id', )
+values('C121','P009','D9')
+insert into bloodsample('bloodbank_id', 'patient_id', 'donor_id', )
+values('C121','P010','D10')
