@@ -90,3 +90,68 @@ print(selectedlist2)
 
 Amrit = 18 in multList
 print (Amrit)
+
+
+
+
+week 9
+
+EVENT
+
+class event:
+    def __init__(self,beg_hr, beg_min, end_hr, end_min, location, desc):
+        self.beg_hr = beg_hr
+        self.beg_min = beg_min
+        self.end_hr = end_hr
+        self.end_min = end_min
+        self.desc = desc
+        self.location = location
+
+    def printevent(self):
+        result = "From: " + str(self.beg_hr) + " : " + str(self.beg_min) + "\n"
+        result += "To: " + str(self.beg_hr) + " : " + str(self.beg_min) + "\n"
+        result += "description: " + self.desc +"\n"
+        result += "location: "+ self.desc + "\n"
+        result += "-----------------------------------------------------------"
+        return result
+
+class Day:
+    def __init__(self, name):
+        self.name = name
+        self.events = []
+
+    def addevent(self, event):
+      self.events.append(event)
+
+    def printEvents(self):
+
+        for i in self.events:
+
+            print(i.printevent())
+            
+            
+            
+            TEST
+            
+            
+            
+            
+            from event import *
+
+e = event(12, 10, 14, 10, "Cester", "Meeting with coop advisior")
+
+e1 = event(22, 30, 22, 50, "Lambton", "Celebration")
+
+e2 = event(10, 00, 11, 44, "Fairwell", "Movie")
+
+#print(e.printevent())
+
+
+
+d = Day ("Wednesday")
+d.addevent(e)
+d.addevent(e1)
+d.addevent(e2)
+d.printEvents()
+
+
