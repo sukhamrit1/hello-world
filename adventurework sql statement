@@ -45,3 +45,15 @@ from bramptondata
 where month(SoldDate) between 9 and 10
 group by SoldDate, Community, type, description, Bedroom
 order by avg([sold price]) desc;
+
+
+
+
+
+
+
+select * from tblTransaction as T
+inner join tblEmployee as E
+on E.EmployeeNumber = T.EmployeeNumber;
+
+change inner with left or right
