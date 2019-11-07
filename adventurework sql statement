@@ -57,3 +57,43 @@ inner join tblEmployee as E
 on E.EmployeeNumber = T.EmployeeNumber;
 
 change inner with left or right
+
+select * from tblTransaction as T
+inner join tblEmployee as E
+on E.EmployeeNumber = T.EmployeeNumber
+where EmployeeLastName like 'y%'
+order by T.EmployeeNumber;
+
+
+counting the numbers 
+
+select count(*) 
+from tblTransaction as T
+inner join tblEmployee as E
+on E.EmployeeNumber = T.EmployeeNumber
+where EmployeeLastName like 'k%m%';
+
+
+select * from tblTransaction as T
+where EmployeeNumber in (126,127,128,129)
+order by EmployeeNumber;
+
+
+select * from tblTransaction as T
+where EmployeeNumber in (126,127,128,129)
+and year(DateOfTransaction) = 2015
+order by EmployeeNumber;
+
+
+select * from tblTransaction as T
+where EmployeeNumber  in
+ (select EmployeeNumber from tblEmployee where EmployeeLastName not like 'y%')
+order by EmployeeNumber; 
+
+
+select * from tblTransaction as T
+where EmployeeNumber not in
+ (select EmployeeNumber from tblEmployee where EmployeeLastName not like 'y%')
+order by EmployeeNumber; 
+
+
