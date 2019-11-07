@@ -97,3 +97,14 @@ where EmployeeNumber not in
 order by EmployeeNumber; 
 
 
+select * from tblTransaction as T
+where EmployeeNumber = any
+ (select EmployeeNumber from tblEmployee where EmployeeLastName not like 'y%')
+order by EmployeeNumber; 
+
+select * from tblTransaction as T
+inner join (select * from tblEmployee
+where EmployeeLastName like 'y%') as E 
+on E.EmployeeNumber = T.EmployeeNumber
+order by T.EmployeeNumber    
+
