@@ -1,0 +1,42 @@
+select * from shoes 
+select * from customersales
+
+select * from sys.objects
+where name like '%sales%'
+or name like'%shoes%';
+
+ALTER TABLE shoes
+ADD CONSTRAINT PK_SaleRecord_Id PRIMARY KEY (color, style, brandname);
+
+alter table shoes
+alter column brandname nvarchar(255) not null;
+
+
+alter table customersales
+ADD CONSTRAINT PK_customer_Id PRIMARY KEY  (customername, purchasedate, color, style, brandname);
+
+alter table customersales
+alter column purchasedate nvarchar(255) not null;
+
+
+select customername, purchasedate, color, style, brandname from customersales
+group by customername, purchasedate, color, style, brandname; 
+
+
+alter table customersales  
+add constraint FK_customer FOREIGN KEY (color, style, brandname)
+ references shoes (color, style, brandname)
+ on delete cascade
+ on update cascade;
+
+insert into customersales (customername, purchasedate, color, style, brandname) 
+values ('jorge', '11/11/11', 'red', 'formsal', 'abbibas');
+
+select sum(price) as totalsalesprice
+ from customersales as c, shoes as s
+where c.brandname = s.brandname and 
+c.color = s.color and 
+c.style = s.style and
+month(c.purchasedate) between 2 and 4
+and upper(c.customername) in ('john', 'suzan');
+
